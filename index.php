@@ -20,7 +20,7 @@
     <input type="submit" value="Добавить">
   </form>
     <br>
-    <a href=subject.php>перейти к заполнению групп</a>
+    <a href=subjects.php>перейти к заполнению групп</a>
 
 
 
