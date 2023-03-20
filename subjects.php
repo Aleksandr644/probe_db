@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <h1>Список студентов</h1>
+  <h1>Список Предметов</h1>
   <form action="addSubject.php" method="POST">
-    <input type="text" name="subject" placeholder="Введите предмет" required><br>
+    <input type="text" name="title" placeholder="Введите предмет" required><br>
     <input type="submit" value="Добавить">
   </form>
 
