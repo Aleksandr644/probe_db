@@ -11,7 +11,7 @@
     $row = $result->fetch_array(MYSQLI_ASSOC);
 
 ?>
-<form action="">
+<form action="changeSubject.php?id=$id">
     <input type="text" name="title"
     value="<?php echo $row['title']?>"><br>
     <input type="submit" value="Изменить">
