@@ -13,9 +13,14 @@
     <input type="text" name="fname" placeholder="Введите имя" required><br>
     <input type="text" name="lname" placeholder="Введите фамилию" required><br>
     <input type="number" name="age" placeholder="Введите возраст" required><br>
+    <select name="group">
+        <option value=2>A-201</option>
+        <option value=1>ИЗ-301</option>
+    </select><br>
     <input type="submit" value="Добавить">
   </form>
-
+    <br>
+    <a href=subject.php>перейти к заполнению групп</a>
 
 
 
@@ -29,9 +34,10 @@
     $result = $connect->query($sql);
 
     while ($row = $result->fetch_array(MYSQLI_ASSOC)) {
-      echo "<p>
-              $row[lname] $row[fname] $row[age] $row[name]
-            </p>";
+      echo "<div>
+                $row[lname] $row[fname] $row[age] $row[name]
+                <a href='update_student.php?id=$row[student_id]'>изменить</a>
+            </div>";
     }
     
     $connect->close();
